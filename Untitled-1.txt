@@ -1,0 +1,31 @@
+
+# Define the first class
+class Car:
+    def __init__(self, make, model, year):
+        self.make = make
+        self.model = model
+        self.year = year
+    def drive(self):
+        print(f"{self.make} {self.model} is now driving...")
+
+# Define the second class
+class Dog:
+    def __init__(self, name, breed, age):
+        self.name = name
+        self.breed = breed
+        self.age = age
+    def bark(self):
+        print(f"{self.name} is barking...")
+# Define the third class
+class Rectangle:
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+    def area(self):
+        return self.length * self.width
+car1 = Car("Toyota", "Corolla", 2020)
+car1.drive()
+dog1 = Dog("Rex", "Labrador", 3)
+dog1.bark()
+rect1 = Rectangle(5, 10)
+print("The area of the rectangle is:", rect1.area())
